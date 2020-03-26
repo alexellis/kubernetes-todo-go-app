@@ -1,0 +1,11 @@
+github.com/alexellis/hmac v0.0.0-20180624211220-5c52ab81c0de h1:jiPEvtW8VT0KwJxRyjW2VAAvlssjj9SfecsQ3Vgv5tk=
+github.com/alexellis/hmac v0.0.0-20180624211220-5c52ab81c0de/go.mod h1:uAbpy8G7sjNB4qYdY6ymf5OIQ+TLDPApBYiR0Vc3lhk=
+github.com/gorilla/context v0.0.0-20160226214623-1ea25387ff6f/go.mod h1:kBGZzfjB9CEq2AlWe17Uuf7NDRt0dE0s8S51q0aT7Yg=
+github.com/gorilla/mux v1.6.2/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
+github.com/lib/pq v1.3.0 h1:/qkRGz8zljWiDcFvgpwUpwIAPu3r07TDvs3Rws+o/pU=
+github.com/lib/pq v1.3.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
+github.com/openfaas/faas-provider v0.15.0 h1:3x5ma90FL7AqP4NOD6f03AY24y3xBeVF6xGLUx6Xrlc=
+github.com/openfaas/faas-provider v0.15.0/go.mod h1:8Fagi2UeMfL+gZAqZWSMQg86i+w1+hBOKtwKRP5sLFI=
+github.com/openfaas/openfaas-cloud v0.0.0-20200319114858-76ce15eb291a h1:UDtx6lgS7/J7cClTLkauPzip8K+qfNMVtaMwNCu9m5M=
+github.com/openfaas/openfaas-cloud v0.0.0-20200319114858-76ce15eb291a/go.mod h1:rzuJzd08m8hXz8xQ/CtVdiB8UYhDIroaJCJzGthBzME=
+go.uber.org/goleak v0.10.0/go.mod h1:VCZuO8V8mFPlL0F5J5GK1rtHV3DrFcQ1R8ryq7FK0aI=
