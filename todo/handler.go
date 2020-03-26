@@ -45,7 +45,7 @@ type Todo struct {
 	ID            int        `json:"id"`
 	Description   string     `json:"description"`
 	CreatedDate   *time.Time `json:"created_date"`
-	CompletedDate *time.Time `json:"completed_date"`
+	CompletedDate *time.Time `json:"completed_date,omitempty"`
 }
 
 func Handle(w http.ResponseWriter, r *http.Request) {
@@ -55,14 +55,23 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 
 		if err := insert(string(body)); err != nil {
 			http.Error(w, fmt.Sprintf("unable to insert todo: %s", err.Error()), http.StatusInternalServerError)
+			return
 		}
+
 	} else if r.Method == http.MethodGet && r.URL.Path == "/list" {
 		todos, err := selectTodos()
 
 		if err != nil {
 			http.Error(w, fmt.Sprintf("unable to get todos: %s", err.Error()), http.StatusInternalServerError)
+			return
 		}
-		out, _ := json.Marshal(todos)
+
+		out, err := json.Marshal(todos)
+		if err != nil {
+			http.Error(w, fmt.Sprintf("unable to marshal todos: %s", err.Error()), http.StatusInternalServerError)
+			return
+		}
+
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(out)
 	}
