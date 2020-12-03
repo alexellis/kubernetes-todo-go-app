@@ -8,4 +8,10 @@ Follow along with the blog post to build and deploy a todo app from scratch in G
 
 * [Building a TODO API in Golang with Kubernetes](https://levelup.gitconnected.com/building-a-todo-api-in-golang-with-kubernetes-1ec593f85029)
 
+## Built for developers by developers
+
+<a href="https://github.com/sponsors/alexellis/">
+<img alt="Sponsor this project" src="https://github.com/alexellis/alexellis/blob/master/sponsor-today.png" width="65%" height="65%">
+</a>
+
 License: MIT
